@@ -1,17 +1,15 @@
-# NOBLE BOOK PUBLICATIONS — FINAL v2
+# NOBLE BOOK PUBLICATIONS — FINAL v3
 
 Open `index.html` in a browser.
 
-Updated:
-- Correct visible company logo in navbar.
-- Ishika Sen founder photo.
-- 3 additional Ishika Sen gallery photos.
-- Telegram Channel button: @workfromhome_nbp.
-- Telegram contact: @ishikanoble.
-- Instagram: @nobles.book.publications.
-- WhatsApp updated to: 9748648972.
-- Registration form with Telegram and WhatsApp buttons.
-- Blue premium theme and moving Noble Book Publications background.
-- 10 feedback placeholders.
+Updates in v3:
+- WhatsApp number is now Indian: +919748648972.
+- Desktop navbar logo enlarged and made more prominent.
+- Added a fallback "N" brand mark if the logo image ever fails to load.
+- All other content and design from v2 retained.
 
-Before public launch, replace sample feedback with genuine, permissioned reviews and verify any earnings/client-count claims.
+Current contacts:
+Instagram: @nobles.book.publications
+WhatsApp: +919748648972
+Telegram: @ishikanoble
+Telegram channel: @workfromhome_nbp

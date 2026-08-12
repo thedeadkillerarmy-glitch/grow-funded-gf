@@ -17,7 +17,7 @@ a{text-decoration:none;color:inherit}.container{width:min(1160px,92%);margin:aut
 nav{position:fixed;z-index:50;top:0;left:0;right:0;background:rgba(251,252,255,.92);backdrop-filter:blur(18px);border-bottom:1px solid rgba(223,231,242,.8)}
 .nav{height:78px;display:flex;align-items:center;justify-content:space-between}
 .brand{display:flex;align-items:center;gap:11px;font-size:13px;font-weight:800;letter-spacing:.6px;color:var(--navy)}
-.brand img{width:48px;height:48px;border-radius:9px;object-fit:contain;background:#fff;border:1px solid #e5e8ee}
+.brand img{width:52px;height:52px;border-radius:10px;object-fit:contain;background:#fff;border:1px solid #d9e1ec;box-shadow:0 5px 16px rgba(7,26,59,.10);display:block}.brand-logo-fallback{display:none;width:52px;height:52px;border-radius:10px;background:#071a3b;color:#c9a15b;align-items:center;justify-content:center;font-family:"Playfair Display",serif;font-weight:800;font-size:24px}
 .links{display:flex;gap:27px;font-size:13px;font-weight:700;color:#566176}
 .links a:hover{color:var(--blue)}.nav-btn{background:var(--navy);color:#fff;border-radius:999px;padding:11px 18px;font-size:13px;font-weight:800}
 .hero{padding:150px 0 95px;position:relative;overflow:hidden;background:radial-gradient(circle at 88% 15%,rgba(18,87,181,.18),transparent 30%),linear-gradient(135deg,#fbfcff,#eef6ff)}
@@ -45,12 +45,12 @@ form{background:#fff;border:1px solid var(--line);padding:30px;border-radius:28p
 .reviews{background:#f5f8fc}.review-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.review{background:#fff;border:1px solid var(--line);padding:23px;border-radius:20px}.stars{color:var(--gold);letter-spacing:2px}.review p{color:#566176;font-size:14px;margin:9px 0 13px}.review strong{font-size:13px;color:var(--navy)}.review-note{margin-top:24px;text-align:center;font-size:12px;color:#8791a2}
 footer{background:#061229;color:#aebbd0;padding:54px 0 24px}.footer-grid{display:grid;grid-template-columns:1.4fr .8fr .8fr;gap:40px}.footer-grid h3{color:#fff;font-size:23px;margin-bottom:13px}.footer-grid p,.footer-grid a{font-size:13px}.footer-grid a{display:block;margin:7px 0;color:#c8d3e5}.footer-grid a:hover{color:#fff}.telegram-channel{display:inline-flex!important;background:#1488e8;color:#fff!important;padding:10px 13px;border-radius:10px;font-weight:800;margin-top:12px!important}.copyright{border-top:1px solid rgba(255,255,255,.1);margin-top:38px;padding-top:18px;text-align:center;font-size:11px}
 @media(max-width:850px){.links{display:none}.hero-grid,.about-grid,.form-wrap{grid-template-columns:1fr}.hero{padding-top:125px}.hero-card{max-width:600px;margin:auto}.cards,.process-grid{grid-template-columns:1fr}.gallery-grid{grid-template-columns:1fr 1fr}.gallery-grid img:first-child{height:450px;grid-column:span 2}.section-head h2,.about-copy h2,.apply-copy h2{font-size:38px}}
-@media(max-width:560px){.fields,.form-actions,.review-grid,.gallery-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.gallery-grid img:first-child{grid-column:auto;height:330px}.gallery-grid img{height:330px}.footer-grid{grid-template-columns:1fr}.hero-copy p{font-size:16px}section{padding:70px 0}.profile img{height:330px}.brand span{font-size:11px}}
+@media(max-width:560px){.fields,.form-actions,.review-grid,.gallery-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.gallery-grid img:first-child{grid-column:auto;height:330px}.gallery-grid img{height:330px}.footer-grid{grid-template-columns:1fr}.hero-copy p{font-size:16px}section{padding:70px 0}.profile img{height:330px}.brand>span:last-child{font-size:11px}}
 </style>
 </head>
 <body>
 <nav><div class="container nav">
-<a class="brand" href="#home"><img src="assets/noble-book-logo.jpg" alt="Noble Book Publications logo"><span>NOBLE BOOK PUBLICATIONS</span></a>
+<a class="brand" href="#home"><img id="companyLogo" src="assets/noble-book-logo.jpg" alt="Noble Book Publications logo" onerror="this.style.display='none';document.getElementById('logoFallback').style.display='flex'"><span id="logoFallback" class="brand-logo-fallback">N</span><span>NOBLE BOOK PUBLICATIONS</span></a>
 <div class="links"><a href="#about">About</a><a href="#work">Work</a><a href="#gallery">Founder</a><a href="#reviews">Feedback</a></div>
 <a class="nav-btn" href="#apply">Register Now</a>
 </div></nav>
@@ -80,7 +80,7 @@ footer{background:#061229;color:#aebbd0;padding:54px 0 24px}.footer-grid{display
 
 <section class="apply" id="apply"><div class="container form-wrap"><div class="apply-copy"><div class="eyebrow">Registration</div><h2>Ready to start a conversation?</h2><p>Enter your details below. You can send the completed information directly to Telegram or WhatsApp.</p>
 <a class="channel" href="https://t.me/workfromhome_nbp" target="_blank" rel="noopener">✈ Telegram Channel · @workfromhome_nbp</a>
-<div class="contact-stack"><a class="mini-link" href="https://instagram.com/nobles.book.publications" target="_blank" rel="noopener">Instagram</a><a class="mini-link" href="https://t.me/ishikanoble" target="_blank" rel="noopener">Telegram</a><a class="mini-link" href="https://wa.me/9748648972" target="_blank" rel="noopener">WhatsApp</a></div></div>
+<div class="contact-stack"><a class="mini-link" href="https://instagram.com/nobles.book.publications" target="_blank" rel="noopener">Instagram</a><a class="mini-link" href="https://t.me/ishikanoble" target="_blank" rel="noopener">Telegram</a><a class="mini-link" href="https://wa.me/919748648972" target="_blank" rel="noopener">WhatsApp</a></div></div>
 <form id="projectForm"><div class="fields">
 <div><label>Full Name *</label><input name="fullName" required></div><div><label>Mobile Number *</label><input name="mobile" type="tel" required></div>
 <div><label>House No. *</label><input name="houseNo" required></div><div><label>City *</label><input name="city" required></div>
@@ -104,10 +104,15 @@ footer{background:#061229;color:#aebbd0;padding:54px 0 24px}.footer-grid{display
 
 <footer><div class="container footer-grid"><div><h3>NOBLE BOOK PUBLICATIONS</h3><p>Publishing and project support with a simple, direct enquiry experience.</p></div>
 <div><h3>Explore</h3><a href="#about">About</a><a href="#work">Work</a><a href="#gallery">Founder</a><a href="#reviews">Feedback</a><a href="#apply">Register Now</a></div>
-<div><h3>Connect</h3><a href="https://instagram.com/nobles.book.publications" target="_blank" rel="noopener">Instagram · @nobles.book.publications</a><a href="https://t.me/ishikanoble" target="_blank" rel="noopener">Telegram · @ishikanoble</a><a class="telegram-channel" href="https://t.me/workfromhome_nbp" target="_blank" rel="noopener">✈ Join Telegram Channel</a><a href="https://wa.me/9748648972" target="_blank" rel="noopener">WhatsApp · 9748648972</a></div></div>
+<div><h3>Connect</h3><a href="https://instagram.com/nobles.book.publications" target="_blank" rel="noopener">Instagram · @nobles.book.publications</a><a href="https://t.me/ishikanoble" target="_blank" rel="noopener">Telegram · @ishikanoble</a><a class="telegram-channel" href="https://t.me/workfromhome_nbp" target="_blank" rel="noopener">✈ Join Telegram Channel</a><a href="https://wa.me/919748648972" target="_blank" rel="noopener">WhatsApp · 919748648972</a></div></div>
 <div class="container copyright">© 2026 NOBLE BOOK PUBLICATIONS · Founder & CEO: Ishika Sen</div></footer>
 
 <script>
+const companyLogo=document.getElementById("companyLogo");
+const logoFallback=document.getElementById("logoFallback");
+if(companyLogo){
+  companyLogo.addEventListener("error",()=>{companyLogo.style.display="none";logoFallback.style.display="flex";});
+}
 const form=document.getElementById("projectForm");
 function getMessage(){
  const d=new FormData(form);
@@ -115,7 +120,7 @@ function getMessage(){
 }
 function valid(){return form.reportValidity();}
 document.getElementById("sendTelegram").onclick=()=>{if(valid()) window.open("https://t.me/ishikanoble?text="+encodeURIComponent(getMessage()),"_blank");};
-document.getElementById("sendWhatsApp").onclick=()=>{if(valid()) window.open("https://wa.me/9748648972?text="+encodeURIComponent(getMessage()),"_blank");};
+document.getElementById("sendWhatsApp").onclick=()=>{if(valid()) window.open("https://wa.me/919748648972?text="+encodeURIComponent(getMessage()),"_blank");};
 </script>
 </body>
 </html>

@@ -1,26 +1,17 @@
-# Noble Book Publications — Final Single Page
+# NOBLE BOOK PUBLICATIONS — FINAL v2
 
 Open `index.html` in a browser.
 
-Included:
-- User-provided Noble Book Publications logo
-- User-provided Ishika Sen founder image
-- Blue premium visual theme
-- Right-to-left Noble Book Publications background marquee
-- Founder section
-- Work/process section
-- Registration form
-- Send on Telegram
-- Send on WhatsApp
-- Instagram, Telegram and channel links
-- 10 review placeholders
+Updated:
+- Correct visible company logo in navbar.
+- Ishika Sen founder photo.
+- 3 additional Ishika Sen gallery photos.
+- Telegram Channel button: @workfromhome_nbp.
+- Telegram contact: @ishikanoble.
+- Instagram: @nobles.book.publications.
+- WhatsApp updated to: 9748648972.
+- Registration form with Telegram and WhatsApp buttons.
+- Blue premium theme and moving Noble Book Publications background.
+- 10 feedback placeholders.
 
-Current contact details:
-Instagram: @nobles.book.publications
-WhatsApp: +84948054079
-Telegram: @ishikanoble
-Telegram channel: @workfromhome_nbp
-
-Important:
-The review cards are intentionally placeholders, not fabricated customer testimonials.
-Earnings/client-count claims should be updated to verified figures before public launch.
+Before public launch, replace sample feedback with genuine, permissioned reviews and verify any earnings/client-count claims.

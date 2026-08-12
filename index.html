@@ -1,192 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Grow Funded</title>
-  <meta name="description" content="Grow Funded - premium black gold trading education and account support website." />
-  <meta name="theme-color" content="#050505" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link rel="apple-touch-icon" href="favicon.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="Noble Book Publications — publishing and project opportunities.">
+<title>Noble Book Publications | Ishika Sen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#071a3b;--blue:#1257b5;--sky:#eaf3ff;--gold:#c9a15b;--cream:#fbfcff;--ink:#14213d;--muted:#667085;--white:#fff;--line:#dfe7f2;--shadow:0 24px 70px rgba(7,26,59,.14)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"DM Sans",sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+.container{width:min(1160px,92%);margin:auto}
+nav{position:fixed;z-index:50;top:0;left:0;right:0;background:rgba(251,252,255,.86);backdrop-filter:blur(18px);border-bottom:1px solid rgba(223,231,242,.75)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:800;letter-spacing:.6px;color:var(--navy)}
+.brand img{width:44px;height:44px;border-radius:10px;object-fit:cover}
+.links{display:flex;gap:28px;font-size:14px;font-weight:700;color:#566176}
+.links a:hover{color:var(--blue)}
+.nav-btn{background:var(--navy);color:#fff;border-radius:999px;padding:11px 18px;font-size:13px;font-weight:800}
+.hero{padding:150px 0 95px;position:relative;overflow:hidden;background:radial-gradient(circle at 88% 15%,rgba(18,87,181,.18),transparent 30%),linear-gradient(135deg,#fbfcff,#eef6ff)}
+.marquee{position:absolute;left:0;right:0;top:92px;white-space:nowrap;overflow:hidden;opacity:.055;font-family:"Playfair Display",serif;font-size:72px;font-weight:800;color:var(--blue);pointer-events:none}
+.marquee span{display:inline-block;animation:move 22s linear infinite}
+@keyframes move{from{transform:translateX(100vw)}to{transform:translateX(-100%)}}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--gold);font-size:11px;font-weight:800;letter-spacing:2.2px;text-transform:uppercase;margin-bottom:18px}
+.eyebrow:before{content:"";width:30px;height:1px;background:var(--gold)}
+h1,h2,h3{font-family:"Playfair Display",serif}
+h1{font-size:clamp(48px,6vw,80px);line-height:1.04;color:var(--navy);max-width:720px}
+.hero-copy p{font-size:18px;color:var(--muted);max-width:620px;margin:24px 0 30px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;justify-content:center;align-items:center;padding:14px 22px;border-radius:999px;font-weight:800;border:1px solid var(--navy);transition:.25s}
+.primary{background:var(--navy);color:#fff}.primary:hover{transform:translateY(-2px);box-shadow:0 14px 28px rgba(7,26,59,.22)}
+.secondary{background:#fff;color:var(--navy);border-color:var(--line)}
+.hero-card{background:linear-gradient(150deg,var(--navy),#0d3d82);border-radius:30px;padding:22px;color:#fff;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.hero-card:before{content:"";position:absolute;width:260px;height:260px;border:1px solid rgba(201,161,91,.28);border-radius:50%;right:-100px;bottom:-90px}
+.hero-card img{width:100%;height:390px;object-fit:cover;border-radius:20px;display:block;filter:saturate(.96)}
+.card-caption{padding:18px 8px 6px}.card-caption strong{display:block;font-size:20px}.card-caption span{font-size:13px;color:#cdd9ed}
+section{padding:92px 0}
+.section-head{text-align:center;max-width:720px;margin:0 auto 46px}
+.section-head h2{font-size:45px;color:var(--navy);line-height:1.12;margin-bottom:13px}
+.section-head p{color:var(--muted)}
+.about-grid{display:grid;grid-template-columns:.72fr 1.28fr;gap:58px;align-items:center}
+.profile{background:#fff;border:1px solid var(--line);border-radius:28px;padding:24px;box-shadow:0 18px 50px rgba(7,26,59,.07);text-align:center}
+.profile img{width:100%;height:390px;object-fit:cover;border-radius:20px}
+.profile h3{font-size:25px;color:var(--navy);margin-top:18px}
+.verified{color:#2878df;font-size:13px;font-weight:800}
+.about-copy h2{font-size:48px;color:var(--navy);margin-bottom:18px}
+.about-copy p{color:var(--muted);margin-bottom:15px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:25px}
+.stat{background:#f1f6fd;border:1px solid #e2edf9;border-radius:18px;padding:18px}.stat strong{display:block;font-size:26px;color:var(--navy)}.stat span{font-size:12px;color:var(--muted)}
+.services{background:#fff}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{padding:28px;border:1px solid var(--line);border-radius:23px;background:#fff;transition:.25s}.card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.icon{width:45px;height:45px;border-radius:14px;background:var(--sky);color:var(--blue);display:grid;place-items:center;font-weight:900;margin-bottom:20px}.card h3{font-size:21px;color:var(--navy);margin-bottom:7px}.card p{font-size:14px;color:var(--muted)}
+.process{background:linear-gradient(135deg,#071a3b,#0c438f);color:#fff}
+.process .section-head h2{color:#fff}.process .section-head p{color:#cad8ec}
+.process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.step{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);border-radius:23px;padding:27px}.step-num{color:var(--gold);font-weight:900;letter-spacing:2px}.step h3{font-size:22px;margin:10px 0 7px}.step p{font-size:14px;color:#c9d6e9}
+.apply{background:linear-gradient(180deg,#edf5ff,#fbfcff)}
+.form-wrap{display:grid;grid-template-columns:.7fr 1.3fr;gap:55px;align-items:start}
+.apply-copy h2{font-size:48px;color:var(--navy);line-height:1.1;margin-bottom:16px}.apply-copy p{color:var(--muted);margin-bottom:20px}
+.channel{display:inline-flex;align-items:center;gap:8px;background:#e8f2ff;color:#1257b5;padding:10px 14px;border-radius:999px;font-size:13px;font-weight:800}
+form{background:#fff;border:1px solid var(--line);padding:30px;border-radius:28px;box-shadow:var(--shadow)}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field.full{grid-column:1/-1}
+label{display:block;font-size:12px;font-weight:800;color:#4d596e;margin-bottom:7px}
+input{width:100%;padding:13px 14px;border:1px solid #dce4ef;border-radius:12px;background:#fbfdff;outline:none;font:inherit}input:focus{border-color:#4f86cf;box-shadow:0 0 0 3px rgba(79,134,207,.12)}
+.form-actions{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}.send{border:0;border-radius:13px;padding:14px;font-weight:900;cursor:pointer;font:inherit}.tg{background:#1488e8;color:#fff}.wa{background:#1da851;color:#fff}
+.form-small{font-size:11px;color:#8a94a5;margin-top:12px}
+.reviews{background:#f5f8fc}
+.review-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.review{background:#fff;border:1px solid var(--line);padding:23px;border-radius:20px}.stars{color:var(--gold);letter-spacing:2px}.review p{color:#566176;font-size:14px;margin:9px 0 13px}.review strong{font-size:13px;color:var(--navy)}
+.review-note{margin-top:24px;text-align:center;font-size:12px;color:#8791a2}
+footer{background:#061229;color:#aebbd0;padding:54px 0 24px}.footer-grid{display:grid;grid-template-columns:1.4fr .8fr .8fr;gap:40px}.footer-grid h3{color:#fff;font-size:23px;margin-bottom:13px}.footer-grid p,.footer-grid a{font-size:13px}.footer-grid a{display:block;margin:7px 0;color:#c8d3e5}.footer-grid a:hover{color:#fff}.copyright{border-top:1px solid rgba(255,255,255,.1);margin-top:38px;padding-top:18px;text-align:center;font-size:11px}
+@media(max-width:850px){.links{display:none}.hero-grid,.about-grid,.form-wrap{grid-template-columns:1fr}.hero{padding-top:125px}.hero-card{max-width:600px;margin:auto}.cards,.process-grid{grid-template-columns:1fr}.section-head h2,.about-copy h2,.apply-copy h2{font-size:38px}}
+@media(max-width:560px){.fields,.form-actions,.review-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.footer-grid{grid-template-columns:1fr}.hero-copy p{font-size:16px}section{padding:70px 0}.profile img{height:330px}}
+</style>
 </head>
 <body>
-  <div class="site-bg">
-    <div class="ticker-bg">
-      <span>BTC +1.24%</span><span>ETH +0.88%</span><span>GOLD +0.42%</span><span>SILVER +0.31%</span><span>NASDAQ +0.64%</span>
-      <span>BTC +1.24%</span><span>ETH +0.88%</span><span>GOLD +0.42%</span><span>SILVER +0.31%</span><span>FOREX LIVE</span>
-    </div>
-    <div class="chart-lines"></div>
-    <div class="gold-orb orb-1"></div>
-    <div class="gold-orb orb-2"></div>
-  </div>
+<nav><div class="container nav">
+<a class="brand" href="#home"><img src="assets/noble-book-logo.jpg" alt="Noble Book Publications logo"><span>NOBLE BOOK PUBLICATIONS</span></a>
+<div class="links"><a href="#about">About</a><a href="#work">Work</a><a href="#process">Process</a><a href="#reviews">Feedback</a></div>
+<a class="nav-btn" href="#apply">Register Now</a>
+</div></nav>
 
-  <header class="topbar">
-    <div class="brand">
-      <img src="favicon.svg" class="brand-logo" alt="">
-      <div>
-        <div class="brand-title">Grow Funded</div>
-        <div class="brand-sub">PREMIUM TRADING DESK • BLACK & GOLD</div>
-      </div>
-    </div>
+<section class="hero" id="home">
+<div class="marquee"><span>NOBLE BOOK PUBLICATIONS · NOBLE BOOK PUBLICATIONS · NOBLE BOOK PUBLICATIONS · </span></div>
+<div class="container hero-grid">
+<div class="hero-copy">
+<div class="eyebrow">Publishing • Projects • Community</div>
+<h1>Your project. Your handwriting. Your opportunity.</h1>
+<p>Noble Book Publications connects people with book-based projects and publishing-focused work through a simple, direct enquiry process.</p>
+<div class="buttons"><a class="btn primary" href="#apply">Register Now →</a><a class="btn secondary" href="https://t.me/ishikanoble" target="_blank" rel="noopener">Message on Telegram</a></div>
+</div>
+<div class="hero-card">
+<img src="assets/ishika-sen.jpg" alt="Ishika Sen">
+<div class="card-caption"><strong>Ishika Sen</strong><span>Founder & CEO · Noble Book Publications</span></div>
+</div>
+</div>
+</section>
 
-    <nav class="nav">
-      <a href="#charts">Charts</a>
-      <a href="#experts">Experts</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#register">Register</a>
-    </nav>
+<section id="about"><div class="container about-grid">
+<div class="profile"><img src="assets/ishika-sen.jpg" alt="Ishika Sen, Founder and CEO"><h3>Ishika Sen</h3><div class="verified">✓ Verified Founder & CEO</div><p style="font-size:13px;color:#6b7485;margin-top:6px">Noble Book Publications</p></div>
+<div class="about-copy"><div class="eyebrow">About Noble Book</div><h2>Built around books, projects and people.</h2>
+<p>Noble Book Publications is presented as a modern, author-focused publishing and project platform. The aim is to keep the enquiry process simple and give participants clear information about the project they are considering.</p>
+<p>After registration, project instructions and the relevant book/reference material can be shared with the participant. Always review the project terms and instructions before starting any work.</p>
+<div class="stats"><div class="stat"><strong>250+</strong><span>Feedback / client submissions*</span></div><div class="stat"><strong>₹25K–₹50K</strong><span>Example monthly earning claim*</span></div><div class="stat"><strong>@workfromhome_nbp</strong><span>Telegram channel</span></div></div>
+</div></div></section>
 
-    <a class="top-btn glow-card" href="https://wa.me/917439026141" target="_blank" rel="noopener">
-      <span class="glow-spot"></span>Get Started
-    </a>
-  </header>
+<section class="services" id="work"><div class="container"><div class="section-head"><div class="eyebrow">The Work</div><h2>A simple project flow.</h2><p>Information below describes the current project concept and can be edited as your process changes.</p></div>
+<div class="cards">
+<div class="card"><div class="icon">01</div><h3>Register</h3><p>Submit your name, contact and project details through the registration form.</p></div>
+<div class="card"><div class="icon">02</div><h3>Receive Material</h3><p>After registration, the applicable book/reference photo or project instructions can be shared with you.</p></div>
+<div class="card"><div class="icon">03</div><h3>Complete the Work</h3><p>Follow the provided instructions carefully and submit the required work through the agreed communication channel.</p></div>
+</div></div></section>
 
-  <main>
-    <section class="hero">
-      <div class="pill glow-card"><span class="glow-spot"></span>TRADING EDUCATION • DEMO & REAL ACCOUNT GUIDANCE</div>
-      <h1>Trade Smarter With <span>Grow Funded</span></h1>
-      <p>
-        Professional market education, account setup support, trading tools, and direct guidance for beginners and serious learners.
-      </p>
-      <div class="hero-actions">
-        <a href="#charts" class="btn gold-btn glow-card"><span class="glow-spot"></span>View Live Charts</a>
-        <a href="https://wa.me/917439026141" target="_blank" rel="noopener" class="btn outline-btn glow-card"><span class="glow-spot"></span>Get Started</a>
-      </div>
+<section class="process" id="process"><div class="container"><div class="section-head"><div class="eyebrow">How It Works</div><h2>From registration to submission.</h2><p>A clear three-stage journey for new participants.</p></div>
+<div class="process-grid"><div class="step"><div class="step-num">STEP 01</div><h3>Register</h3><p>Fill in your basic details and project number. Choose Telegram or WhatsApp to continue.</p></div>
+<div class="step"><div class="step-num">STEP 02</div><h3>Get Project Details</h3><p>Project-specific instructions and reference material are shared after the initial enquiry.</p></div>
+<div class="step"><div class="step-num">STEP 03</div><h3>Work & Submit</h3><p>Complete the assigned handwriting/book-based work according to the instructions you receive.</p></div></div></div></section>
 
-      <div class="trust-row">
-        <div>Trusted by learners</div>
-        <div>Powered by TradingView</div>
-        <div>Exness-ready guidance</div>
-      </div>
-    </section>
+<section class="apply" id="apply"><div class="container form-wrap">
+<div class="apply-copy"><div class="eyebrow">Registration</div><h2>Ready to start a conversation?</h2><p>Enter your details below. You can send the completed information directly to Telegram or WhatsApp.</p><a class="channel" href="https://t.me/workfromhome_nbp" target="_blank" rel="noopener">Telegram Channel · @workfromhome_nbp</a></div>
+<form id="projectForm"><div class="fields">
+<div><label>Full Name *</label><input name="fullName" required></div><div><label>Mobile Number *</label><input name="mobile" type="tel" required></div>
+<div><label>House No. *</label><input name="houseNo" required></div><div><label>City *</label><input name="city" required></div>
+<div><label>District *</label><input name="district" required></div><div><label>PIN Code *</label><input name="pin" inputmode="numeric" required></div>
+<div><label>State *</label><input name="state" required></div><div><label>Project No. *</label><input name="projectNo" required></div>
+</div>
+<div class="form-actions"><button class="send tg" type="button" id="sendTelegram">Send on Telegram</button><button class="send wa" type="button" id="sendWhatsApp">Send on WhatsApp</button></div>
+<div class="form-small">Please verify your information before sending. Project terms, eligibility, payment terms and any applicable fees should be confirmed before you begin.</div>
+</form></div></section>
 
-    <section class="section" id="reviews">
-      <div class="section-head">
-        <div class="pill small">CLIENT FEEDBACK</div>
-        <h2>Real-Style <span>Reviews</span></h2>
-        <p>Professional client feedback section with clean mobile-friendly spacing.</p>
-      </div>
+<section class="reviews" id="reviews"><div class="container"><div class="section-head"><div class="eyebrow">Feedback</div><h2>Community voices.</h2><p>The following are placeholders based on the requested layout. Replace them with genuine, permissioned reviews before public launch.</p></div>
+<div class="review-grid">
+<div class="review"><div class="stars">★★★★★</div><p>“Sample feedback — replace this text with a genuine participant review.”</p><strong>Participant Review 01</strong></div>
+<div class="review"><div class="stars">★★★★★</div><p>“Sample feedback — replace this text with a genuine participant review.”</p><strong>Participant Review 02</strong></div>
+<div class="review"><div class="stars">★★★★★</div><p>“Sample feedback — replace this text with a genuine participant review.”</p><strong>Participant Review 03</strong></div>
+<div class="review"><div class="stars">★★★★★</div><p>“Sample feedback — replace this text with a genuine participant review.”</p><strong>Participant Review 04</strong></div>
+<div class="review"><div class="stars">★★★★★</div><p>“Sample feedback — replace this text with a genuine participant review.”</p><strong>Participant Review 05</strong></div>
+<div class="review"><div class="stars">★★★★★</div><p>“Sample feedback — replace this text with a genuine participant review.”</p><strong>Participant Review 06</strong></div>
+<div class="review"><div class="stars">★★★★★</div><p>“Sample feedback — replace this text with a genuine participant review.”</p><strong>Participant Review 07</strong></div>
+<div class="review"><div class="stars">★★★★★</div><p>“Sample feedback — replace this text with a genuine participant review.”</p><strong>Participant Review 08</strong></div>
+<div class="review"><div class="stars">★★★★★</div><p>“Sample feedback — replace this text with a genuine participant review.”</p><strong>Participant Review 09</strong></div>
+<div class="review"><div class="stars">★★★★★</div><p>“Sample feedback — replace this text with a genuine participant review.”</p><strong>Participant Review 10</strong></div>
+</div><div class="review-note">* Any earnings or client-count figures should be updated to verified figures before publication.</div></div></section>
 
-      <div class="review-grid">
-        <article class="review-card glow-card"><span class="glow-spot"></span><div class="stars">★★★★★</div><p>“Bhai demo account se start kiya tha, team ne step by step samjhaya. Ab chart dekhna easy lagta hai.”</p><h4>Khatija Banu</h4></article>
-        <article class="review-card glow-card"><span class="glow-spot"></span><div class="stars">★★★★★</div><p>“Support clean hai aur process professional. Beginner ke liye proper guidance milta hai.”</p><h4>Mukata Rathore</h4></article>
-        <article class="review-card glow-card"><span class="glow-spot"></span><div class="stars">★★★★★</div><p>“Pehle mujhe trading ka basic bhi clear nahi tha, ab risk aur demo practice dono samajh aaya.”</p><h4>Rahul Verma</h4></article>
-        <article class="review-card glow-card"><span class="glow-spot"></span><div class="stars">★★★★★</div><p>“Bhai genuine guidance mili, koi hidden policy nahi. Demo se start karna best laga.”</p><h4>Monisha Singhania</h4></article>
-        <article class="review-card glow-card"><span class="glow-spot"></span><div class="stars">★★★★★</div><p>“Maine small practice se start kiya. Team ka response fast tha aur account setup bhi easy raha.”</p><h4>Aman Yadav</h4></article>
-        <article class="review-card glow-card"><span class="glow-spot"></span><div class="stars">★★★★★</div><p>“Professional website jaisa hi service bhi proper hai. WhatsApp pe direct support mila.”</p><h4>Riya Sharma</h4></article>
-        <article class="review-card glow-card"><span class="glow-spot"></span><div class="stars">★★★★★</div><p>“Bhai chart analysis ka basic clear karaya, bina pressure ke demo account pe practice karwaya.”</p><h4>Sameer Khan</h4></article>
-        <article class="review-card glow-card"><span class="glow-spot"></span><div class="stars">★★★★★</div><p>“Clear communication, professional setup, and good beginner-friendly process.”</p><h4>Nisha Patel</h4></article>
-      </div>
-    </section>
+<footer><div class="container footer-grid">
+<div><h3>NOBLE BOOK PUBLICATIONS</h3><p>Publishing and project support with a simple, direct enquiry experience.</p></div>
+<div><h3>Explore</h3><a href="#about">About</a><a href="#work">Work</a><a href="#process">Process</a><a href="#apply">Register Now</a></div>
+<div><h3>Connect</h3><a href="https://instagram.com/nobles.book.publications" target="_blank" rel="noopener">Instagram · @nobles.book.publications</a><a href="https://t.me/ishikanoble" target="_blank" rel="noopener">Telegram · @ishikanoble</a><a href="https://t.me/workfromhome_nbp" target="_blank" rel="noopener">Channel · @workfromhome_nbp</a><a href="https://wa.me/84948054079" target="_blank" rel="noopener">WhatsApp · +84948054079</a></div>
+</div><div class="container copyright">© 2026 NOBLE BOOK PUBLICATIONS · Founder & CEO: Ishika Sen</div></footer>
 
-    <section class="stats">
-      <div class="stat-card glow-card"><span class="glow-spot"></span><div class="counter" data-target="24" data-suffix="/7">0</div><p>Customer Support</p></div>
-      <div class="stat-card glow-card"><span class="glow-spot"></span><div class="counter" data-target="100" data-suffix="%">0</div><p>Transparent Policy</p></div>
-      <div class="stat-card glow-card"><span class="glow-spot"></span><div class="counter" data-target="4" data-suffix="+">0</div><p>Expert Team</p></div>
-    </section>
-
-    <section class="section" id="charts">
-      <div class="section-head">
-        <div class="pill small">LIVE MARKETS</div>
-        <h2>Bitcoin <span>Live Chart</span></h2>
-        <p>Main Bitcoin chart with more market tabs below for Gold, Silver, and Ethereum.</p>
-      </div>
-
-      <div class="chart-card glow-card">
-        <span class="glow-spot"></span>
-        <div class="chart-title">BTC / USDT Live</div>
-        <div id="mainChart" class="tv-chart"></div>
-      </div>
-
-      <div class="mini-chart-grid">
-        <button class="mini-tab active" data-symbol="BINANCE:BTCUSDT" data-name="BTC / USDT">Bitcoin</button>
-        <button class="mini-tab" data-symbol="OANDA:XAUUSD" data-name="Gold / USD">Gold</button>
-        <button class="mini-tab" data-symbol="OANDA:XAGUSD" data-name="Silver / USD">Silver</button>
-        <button class="mini-tab" data-symbol="BINANCE:ETHUSDT" data-name="ETH / USDT">ETH</button>
-      </div>
-    </section>
-
-    <section class="section" id="experts">
-      <div class="section-head">
-        <div class="pill small">OUR TEAM</div>
-        <h2>Professional <span>Experts</span></h2>
-        <p>Dedicated team section for company roles and trading education support.</p>
-      </div>
-
-      <div class="expert-grid">
-        <article class="expert-card glow-card"><span class="glow-spot"></span><div class="avatar">MR</div><h3>Muskan Rathore</h3><strong>CEO</strong><p>Leads client strategy, onboarding, and premium service planning for Grow Funded.</p></article>
-        <article class="expert-card glow-card"><span class="glow-spot"></span><div class="avatar">KY</div><h3>Kpila Yadav</h3><strong>Co-Owner</strong><p>Manages operations, service quality, and transparent client communication.</p></article>
-        <article class="expert-card glow-card"><span class="glow-spot"></span><div class="avatar">AS</div><h3>Ayush Seth</h3><strong>Market Expert</strong><p>Supports technical chart education, demo practice, and risk-aware learning.</p></article>
-        <article class="expert-card glow-card"><span class="glow-spot"></span><div class="avatar">RY</div><h3>Rajeev Yadav</h3><strong>Account Expert</strong><p>Helps with account setup, documentation flow, and beginner-friendly guidance.</p></article>
-      </div>
-    </section>
-
-    <section class="section policy">
-      <div class="policy-card glow-card">
-        <span class="glow-spot"></span>
-        <div class="pill small">POLICY</div>
-        <h2>No Hidden Policy</h2>
-        <p>
-          There is no hidden policy. Get registered at a normal price and start your trading education journey.
-          Demo account and real account guidance can both be provided according to your requirement.
-        </p>
-        <p class="risk-note">
-          Market trading involves risk. We provide education, setup guidance, and support. Profit is not guaranteed.
-        </p>
-      </div>
-    </section>
-
-    <section class="section" id="register">
-      <div class="section-head">
-        <div class="pill small">REGISTRATION</div>
-        <h2>Start Your <span>Journey</span></h2>
-        <p>Fill your details and click submit to send everything directly on WhatsApp.</p>
-      </div>
-
-      <form class="register-form glow-card" id="leadForm">
-        <span class="glow-spot"></span>
-        <div class="form-grid">
-          <label>Name <input name="name" placeholder="Enter your full name" required></label>
-          <label>Email <input name="email" type="email" placeholder="Enter your email" required></label>
-          <label>Number <input name="number" placeholder="Enter your phone number" required></label>
-          <label>City <input name="city" placeholder="Enter your city" required></label>
-          <label>Age <input name="age" type="number" placeholder="Enter your age" required></label>
-          <label>Gender
-            <select name="gender" required>
-              <option value="">Select gender</option>
-              <option>Male</option>
-              <option>Female</option>
-              <option>Other</option>
-            </select>
-          </label>
-        </div>
-        <button class="btn gold-btn submit-btn" type="submit">Submit on WhatsApp</button>
-      </form>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div>
-      <div class="brand-title">Grow Funded</div>
-      <p>Black & Gold Trading Desk</p>
-    </div>
-    <div class="footer-links">
-      <a href="#charts">Charts</a>
-      <a href="#experts">Experts</a>
-      <a href="#register">Register</a>
-    </div>
-    <a class="footer-contact" href="https://wa.me/917439026141" target="_blank" rel="noopener">WhatsApp: +91 7439026141</a>
-  </footer>
-
-  <div class="floating">
-    <a href="https://wa.me/917439026141" target="_blank" rel="noopener">◉</a>
-  </div>
-
-  <script src="https://s3.tradingview.com/tv.js"></script>
-  <script src="script.js"></script>
+<script>
+const form=document.getElementById("projectForm");
+function getMessage(){
+ const d=new FormData(form);
+ return `Hello Ishika,\n\nI would like to enquire about a project with NOBLE BOOK PUBLICATIONS.\n\nFull Name: ${d.get("fullName")}\nMobile Number: ${d.get("mobile")}\nHouse No.: ${d.get("houseNo")}\nCity: ${d.get("city")}\nDistrict: ${d.get("district")}\nPIN Code: ${d.get("pin")}\nState: ${d.get("state")}\nProject No.: ${d.get("projectNo")}\n\nThank you.`;
+}
+function valid(){return form.reportValidity();}
+document.getElementById("sendTelegram").onclick=()=>{if(valid()) window.open("https://t.me/ishikanoble?text="+encodeURIComponent(getMessage()),"_blank");};
+document.getElementById("sendWhatsApp").onclick=()=>{if(valid()) window.open("https://wa.me/84948054079?text="+encodeURIComponent(getMessage()),"_blank");};
+</script>
 </body>
 </html>
